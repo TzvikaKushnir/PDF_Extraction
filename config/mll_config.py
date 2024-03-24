@@ -1,8 +1,8 @@
 # third party imports
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
-# define the path to the input pdf we will be using to analize
-INPUT_PDFS = 'datasets\\pdf'
+# define the path to the input pdf we will be using to analyze
+INPUT_PDFS = 'dataset'
 
 # define the path to the temporary output directories
 CHROMA_PATH = 'output\\least'
@@ -17,7 +17,7 @@ SPLITTER = RecursiveCharacterTextSplitter(
 )
 
 QUERIES = [
-    'What is the product name?(please extract product name or test sample or material)',
+    'What is the product name? (please extract product name or test sample or material)',
     'Please return the subject of the document out of the following possibilities:\
         1. Occlusive Patch test or Repeated Insult Patch Test \
         2. Ophthalmology test \
